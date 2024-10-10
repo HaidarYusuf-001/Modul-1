@@ -1,0 +1,1133 @@
+@use "utils" as *;
+@use "global" as *;
+
+.demo-web-prak {
+  &.contentSection {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255 255 255);
+    overflow: hidden;
+  }
+
+  .solutionsSection {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 117px;
+    min-height: 117px;
+    background-color: rgb(198 222 224);
+  }
+
+  .flexRowContainer {
+    position: relative;
+    display: flex;
+    gap: 0 27px;
+    margin: 44px auto;
+    width: 533px;
+
+    @include mq-between(xxl, xxxl) {
+      margin: 44px auto 44px 41%;
+    }
+
+    @include xs {
+      column-gap: 16px;
+    }
+  }
+
+  .solutionsTitle {
+    width: 98px;
+    height: 29px;
+    font: 400 24px/1.2 Itim, Helvetica, Arial, serif;
+    color: rgb(35 77 75);
+
+    @include md {
+      align-items: flex-start;
+      font-size: 22px;
+    }
+  }
+
+  .servicesTitle {
+    width: 86px;
+    height: 29px;
+    font: 400 24px/1.2 Itim, Helvetica, Arial, serif;
+    color: rgb(35 77 75);
+
+    @include md {
+      align-items: flex-start;
+      font-size: 22px;
+    }
+  }
+
+  .clientsTitle {
+    width: 73px;
+    height: 29px;
+    font: 400 24px/1.2 Itim, Helvetica, Arial, serif;
+    color: rgb(35 77 75);
+
+    @include md {
+      align-items: flex-start;
+      font-size: 22px;
+    }
+  }
+
+  .aboutTitle {
+    width: 63px;
+    height: 29px;
+    font: 400 24px/1.2 Itim, Helvetica, Arial, serif;
+    color: rgb(35 77 75);
+
+    @include md {
+      align-items: flex-start;
+      font-size: 22px;
+    }
+  }
+
+  .resourcesTitle {
+    width: 105px;
+    height: 29px;
+    font: 400 24px/1.2 Itim, Helvetica, Arial, serif;
+    color: rgb(35 77 75);
+
+    @include md {
+      align-items: flex-start;
+      font-size: 22px;
+    }
+  }
+
+  .imageRowContainer {
+    position: absolute;
+    top: 26px;
+    left: 74px;
+    display: flex;
+    gap: 0 27px;
+    width: 1292px;
+    height: 61px;
+  }
+
+  .mainImage {
+    margin: 9px 0 0;
+    width: 51px;
+    min-width: 0;
+    object-fit: contain;
+
+    @include mq-between(xxl, xxxl) {
+      margin: 9px 0 0 265px;
+    }
+  }
+
+  .contentColumn {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 1px;
+    width: 190px;
+    min-width: 0;
+  }
+
+  .titleContainer {
+    display: flex;
+  }
+
+  .dreamTitle {
+    font: 600 36px/1.25 Outfit, Helvetica, Arial, serif;
+    color: rgb(250 125 101);
+
+    @include md {
+      align-items: flex-start;
+      font-size: 32px;
+    }
+
+    @include xxs {
+      font-size: 30px;
+    }
+  }
+
+  .safeTitle {
+    font: 600 36px/1.25 Outfit, Helvetica, Arial, serif;
+    color: rgb(51 90 91);
+
+    @include md {
+      align-items: flex-start;
+      font-size: 32px;
+    }
+
+    @include xxs {
+      font-size: 30px;
+    }
+  }
+
+  .insuranceServicesText {
+    margin: 0 3px;
+    font: 600 12px/1.25 Outfit, Helvetica, Arial, serif;
+    color: rgb(1 37 39);
+    letter-spacing: 3.28px;
+  }
+
+  .additionalImage {
+    position: absolute;
+    top: 42px;
+    right: 173px;
+    width: 27px;
+
+    @include mq-between(xxl, xxxl) {
+      right: 340px;
+    }
+  }
+
+  .heroSection {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .flexRowContainerHero {
+    display: flex;
+    margin: 100px auto;
+    width: 100%;
+    max-width: 1262.015625px;
+
+    @include mq-between(xxl, xxxl) {
+      width: 1262.02px;
+    }
+
+    @include lg {
+      flex-direction: column;
+      align-items: center;
+      gap: 30px 0;
+    }
+
+    @include md {
+      margin: 100px 32px 150px auto;
+    }
+
+    @include xs {
+      margin: 100px auto 80px;
+    }
+
+    @include tn {
+      margin: 100px auto 50px;
+    }
+  }
+
+  .leftColumn {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 1262px;
+    height: 2551px;
+
+    @include mq-between(xxl, xxxl) {
+      margin: 0;
+      width: 1262.02px;
+    }
+  }
+
+  .flexRowContainerInner {
+    display: flex;
+    justify-content: space-between;
+    gap: 0 10px;
+    margin: 0 0 0 0.5px;
+    width: 1261.5px;
+    height: 723px;
+
+    @include lg {
+      flex-direction: column;
+      align-items: center;
+      gap: 30px 10px;
+    }
+  }
+
+  .imageColumn {
+    display: flex;
+    flex-direction: column;
+    gap: 33px 0;
+    margin: 93px 0 171px;
+    width: 379.5px;
+    height: 459px;
+  }
+
+  .imageColumn1 {
+    display: flex;
+    flex-direction: column;
+    gap: 41px 0;
+    margin: 0 0 0 1.5px;
+    width: 378px;
+    height: 242px;
+  }
+
+  .heroImage {
+    margin: 0 295px 0 0;
+    width: 83px;
+    height: 85px;
+    object-fit: cover;
+  }
+
+  .imageGroupContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 378px;
+    height: 116px;
+  }
+
+  .flexRowHeroTitle {
+    display: flex;
+    width: 378px;
+    height: 91px;
+  }
+
+  .heroMainTitle {
+    width: 227px;
+    height: 91px;
+    font: 600 72px/1.26 Outfit, Helvetica, Arial, serif;
+    color: rgb(250 125 101);
+
+    @include md {
+      align-items: flex-start;
+      font-size: 52px;
+    }
+
+    @include xxs {
+      font-size: 36px;
+    }
+  }
+
+  .heroSubTitle {
+    width: 151px;
+    height: 91px;
+    font: 600 72px/1.26 Outfit, Helvetica, Arial, serif;
+    color: rgb(51 90 91);
+
+    @include md {
+      align-items: flex-start;
+      font-size: 52px;
+    }
+
+    @include xxs {
+      font-size: 36px;
+    }
+  }
+
+  .insuranceServicesSubtitle {
+    margin: 0 9px;
+    width: 360px;
+    height: 25px;
+    font: 600 20px/1.25 Outfit, Helvetica, Arial, serif;
+    color: rgb(1 37 39);
+    letter-spacing: 5.5px;
+
+    @include md {
+      align-items: flex-start;
+      font-size: 18px;
+    }
+
+    @include xxs {
+      font-size: 16px;
+    }
+  }
+
+  .insuranceIntroText {
+    margin: 0 0.5px 0 0;
+    width: 379px;
+    height: 184px;
+    font: 400 24px/1.25 Outfit, Helvetica, Arial, serif;
+    color: rgb(1 37 39);
+    letter-spacing: 1.68px;
+
+    @include md {
+      align-items: flex-start;
+      font-size: 22px;
+    }
+
+    @include xxs {
+      font-size: 20px;
+    }
+  }
+
+  .imageGroupWrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 625px;
+    height: 723px;
+  }
+
+  .flexRowServiceImages {
+    position: relative;
+    display: flex;
+    width: 625px;
+    height: 723px;
+
+    @include xxs {
+      flex-direction: column;
+      align-items: center;
+      gap: 30px 0;
+    }
+  }
+
+  .serviceImageOne {
+    width: 625px;
+    height: 723px;
+    object-fit: cover;
+  }
+
+  .serviceImageTwo {
+    position: absolute;
+    inset: -41px 95px 0 -212px;
+    width: 742px;
+    height: 764px;
+  }
+
+  .colorBlock {
+    position: absolute;
+    inset: -5px 0 723px;
+    width: 625px;
+    height: 5px;
+    background-color: rgb(242 100 75);
+  }
+
+  .contentBox {
+    display: flex;
+    flex-direction: column;
+    margin: 233px 0 0;
+    width: 1262px;
+    height: 695px;
+  }
+
+  .expectationsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 58px 0;
+    margin: 0 163px 0 26px;
+    width: 1073px;
+    height: 695px;
+
+    @include tn {
+      gap: 50px 0;
+    }
+  }
+
+  .expectationsTitle {
+    margin: 0 293px 0 461px;
+    width: 319px;
+    height: 90px;
+    font: 400 36px/1.25 Outfit, Helvetica, Arial, serif;
+    color: rgb(0 0 0);
+
+    @include md {
+      align-items: flex-start;
+      font-size: 32px;
+    }
+
+    @include xxs {
+      font-size: 30px;
+    }
+  }
+
+  .flexRowFeatures {
+    display: flex;
+    justify-content: space-between;
+    gap: 0 10px;
+    width: 1073px;
+    height: 547px;
+
+    @include md {
+      flex-direction: column;
+      align-items: center;
+      gap: 30px 10px;
+    }
+  }
+
+  .featuresSubtitle {
+    margin: 100px 0 422px;
+    width: 114px;
+    height: 25px;
+    font: 400 20px/1.25 Outfit, Helvetica, Arial, serif;
+    color: rgb(0 0 0);
+    letter-spacing: 1.4px;
+
+    @include md {
+      align-items: flex-start;
+      font-size: 18px;
+    }
+
+    @include xxs {
+      font-size: 16px;
+    }
+  }
+
+  .smallCommercialColumn {
+    display: flex;
+    flex-direction: column;
+    width: 227.5px;
+    height: 547px;
+  }
+
+  .smallCommercialImage {
+    margin: 0 17.5px 0 5px;
+    width: 205px;
+    height: 236px;
+    object-fit: cover;
+  }
+
+  .smallCommercialTitle {
+    margin: 54px 0.5px 0 0;
+    width: 227px;
+    height: 70px;
+    font: 500 28px/1.25 Outfit, Helvetica, Arial, serif;
+    color: rgb(0 0 0);
+
+    @include md {
+      align-items: flex-start;
+      font-size: 26px;
+    }
+
+    @include xxs {
+      font-size: 22px;
+    }
+  }
+
+  .smallBusinessFeatureSubtitle {
+    margin: 33px 0 0 0.5px;
+    width: 227px;
+    height: 103px;
+    font: 400 20px/1.25 Outfit, Helvetica, Arial, serif;
+    color: rgb(0 0 0);
+
+    @include md {
+      align-items: flex-start;
+      font-size: 18px;
+    }
+
+    @include xxs {
+      font-size: 16px;
+    }
+  }
+
+  .showMoreSmallCommercialBtn {
+    margin: 31px 0.5px 0 0;
+    width: 227px;
+    height: 20px;
+    font: 400 16px/1.25 Outfit, Helvetica, Arial, serif;
+    color: rgb(250 125 101);
+    text-decoration: underline;
+  }
+
+  .specialtyInsuranceColumn {
+    display: flex;
+    flex-direction: column;
+    width: 241px;
+    height: 547px;
+  }
+
+  .specialtyInsuranceImage {
+    margin: 0 33px 0 3px;
+    width: 205px;
+    height: 236px;
+    object-fit: cover;
+  }
+
+  .specialtyInsuranceTitle {
+    margin: 54px 0 0;
+    width: 241px;
+    height: 70px;
+    font: 500 28px/1.25 Outfit, Helvetica, Arial, serif;
+    color: rgb(0 0 0);
+
+    @include md {
+      align-items: flex-start;
+      font-size: 26px;
+    }
+
+    @include xxs {
+      font-size: 22px;
+    }
+  }
+
+  .specialtyInsuranceFeatureSubtitle {
+    margin: 22px 0 0;
+    width: 241px;
+    height: 127px;
+    font: 400 20px/1.25 Outfit, Helvetica, Arial, serif;
+    color: rgb(0 0 0);
+
+    @include md {
+      align-items: flex-start;
+      font-size: 18px;
+    }
+
+    @include xxs {
+      font-size: 16px;
+    }
+  }
+
+  .showMoreSpecialtyInsuranceBtn {
+    margin: 18px 0 0;
+    width: 241px;
+    height: 20px;
+    font: 400 16px/1.25 Outfit, Helvetica, Arial, serif;
+    color: rgb(250 125 101);
+    text-decoration: underline;
+  }
+
+  .clientsOverviewContainer {
+    display: flex;
+    justify-content: space-between;
+    gap: 0 10px;
+    margin: 232px 38px 0 23px;
+    width: 1201px;
+    height: 668px;
+
+    @include sm {
+      flex-direction: column;
+      align-items: center;
+      gap: 30px 10px;
+    }
+  }
+
+  .clientColumnOne {
+    display: flex;
+    flex-direction: column;
+    margin: 282px 0 0;
+    width: 170px;
+    height: 386px;
+  }
+
+  .clientsHeroTitle {
+    margin: 0 26px 0 0;
+    width: 144px;
+    height: 120px;
+    font: 400 48px/1.25 Outfit, Helvetica, Arial, serif;
+    color: rgb(0 0 0);
+
+    @include md {
+      align-items: flex-start;
+      font-size: 44px;
+    }
+
+    @include xxs {
+      font-size: 36px;
+    }
+  }
+
+  .clientsColorContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 80px 0;
+    margin: 80px 0 0;
+    width: 170px;
+    height: 87px;
+
+    @include tn {
+      gap: 50px 0;
+    }
+  }
+
+  .clientColorBlockOne {
+    display: flex;
+    justify-content: space-between;
+    gap: 0 10px;
+    margin: 0 0 0 2px;
+    width: 168px;
+    height: 6px;
+
+    @include tn {
+      column-gap: 8px;
+    }
+  }
+
+  .colorBlockOne {
+    width: 6px;
+    height: 6px;
+    background-color: rgb(217 217 217);
+  }
+
+  .clientColorBlockTwo {
+    width: 6px;
+    height: 6px;
+    background-color: rgb(223 81 50);
+  }
+
+  .colorBlockThree {
+    width: 6px;
+    height: 6px;
+    background-color: rgb(217 217 217);
+  }
+
+  .colorBlockFour {
+    width: 6px;
+    height: 6px;
+    background-color: rgb(217 217 217);
+  }
+
+  .clientsDivider {
+    margin: 0 3px 0 0;
+    width: 167px;
+    height: 1px;
+    background-color: rgb(0 0 0 / 27.8%);
+  }
+
+  .clientsActionContainer {
+    display: flex;
+    justify-content: space-between;
+    gap: 0 10px;
+    margin: 79px 42px 0 2px;
+    width: 126px;
+    height: 20px;
+
+    @include tn {
+      column-gap: 8px;
+    }
+  }
+
+  .viewAllClientsLink {
+    width: 11px;
+    height: 20px;
+    font: 400 16px/1.25 Gelasio, Helvetica, Arial, serif;
+    color: rgb(250 125 101);
+  }
+
+  .viewAllClientsBtn {
+    width: 72px;
+    height: 20px;
+    font: 400 16px/1.25 Outfit, Helvetica, Arial, serif;
+    color: rgb(250 125 101);
+  }
+
+  .clientColumnTwo {
+    display: flex;
+    flex-direction: column;
+    margin: 1px 0;
+    width: 333px;
+    height: 666px;
+  }
+
+  .nordRiskImage {
+    width: 333px;
+    height: 389px;
+    object-fit: cover;
+  }
+
+  .nordRiskTitle {
+    margin: 64px 40px 0 0;
+    width: 293px;
+    height: 70px;
+    font: 500 28px/1.25 Outfit, Helvetica, Arial, serif;
+    color: rgb(0 0 0);
+
+    @include md {
+      align-items: flex-start;
+      font-size: 26px;
+    }
+
+    @include xxs {
+      font-size: 22px;
+    }
+  }
+
+  .nordRiskSubtitle {
+    margin: 24px 56px 0 0;
+    width: 277px;
+    height: 75px;
+    font: 400 20px/1.25 Outfit, Helvetica, Arial, serif;
+    color: rgb(0 0 0);
+
+    @include md {
+      align-items: flex-start;
+      font-size: 18px;
+    }
+
+    @include xxs {
+      font-size: 16px;
+    }
+  }
+
+  .showMoreNordRiskBtn {
+    margin: 24px 0 0;
+    width: 333px;
+    height: 20px;
+    font: 400 16px/1.25 Outfit, Helvetica, Arial, serif;
+    color: rgb(250 125 101);
+    text-decoration: underline;
+  }
+
+  .clientColumnThree {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 1px;
+    width: 333px;
+    height: 667px;
+  }
+
+  .euroShieldImage {
+    width: 333px;
+    height: 390px;
+    object-fit: cover;
+  }
+
+  .euroShieldTitle {
+    margin: 64px 165px 0 0;
+    width: 168px;
+    height: 70px;
+    font: 500 28px/1.25 Outfit, Helvetica, Arial, serif;
+    color: rgb(0 0 0);
+
+    @include md {
+      align-items: flex-start;
+      font-size: 26px;
+    }
+
+    @include xxs {
+      font-size: 22px;
+    }
+  }
+
+  .euroShieldSubtitle {
+    margin: 24px 56px 0 0;
+    width: 277px;
+    height: 75px;
+    font: 400 20px/1.25 Outfit, Helvetica, Arial, serif;
+    color: rgb(0 0 0);
+
+    @include md {
+      align-items: flex-start;
+      font-size: 18px;
+    }
+
+    @include xxs {
+      font-size: 16px;
+    }
+  }
+
+  .showMoreEuroShieldBtn {
+    margin: 24px 0 0;
+    width: 333px;
+    height: 20px;
+    font: 400 16px/1.25 Outfit, Helvetica, Arial, serif;
+    color: rgb(250 125 101);
+    text-decoration: underline;
+  }
+
+  .footerSection {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footerInnerContainer {
+    display: flex;
+    flex-direction: column;
+    margin: 35px auto 26px;
+    width: 98.06%;
+    max-width: 1412px;
+    background-color: rgb(250 124 99);
+
+    @include mq-between(xxl, xxxl) {
+      width: 100%;
+    }
+  }
+
+  .flexColFooter {
+    display: flex;
+    flex-direction: column;
+    gap: 37px 0;
+    margin: 107px 0 0;
+
+    @include xs {
+      margin: 80px 0 0;
+    }
+
+    @include tn {
+      margin: 50px 0 0;
+    }
+  }
+
+  .flexColFooterOne {
+    display: flex;
+    flex-direction: column;
+    gap: 35px 0;
+    margin: 0 0 0 11.05%;
+    width: 994.046875px;
+    max-width: 85%;
+
+    @include xl {
+      margin: 0 auto;
+    }
+  }
+
+  .flexRowFooterSection {
+    display: flex;
+    justify-content: space-between;
+    gap: 0 10px;
+    margin: 0 0 0 5px;
+
+    @include xs {
+      flex-direction: column;
+      align-items: center;
+      gap: 30px 10px;
+    }
+  }
+
+  .footerImage {
+    width: 68px;
+    min-width: 0;
+    border-radius: 5px;
+    outline: 3px solid rgb(255 255 255);
+    outline-offset: -3px;
+    object-fit: cover;
+
+    @include xs {
+      width: 100%;
+      min-width: unset;
+      max-width: 68px;
+    }
+  }
+
+  .footerFlexColTwo {
+    display: flex;
+    flex-direction: column;
+    gap: 13px 0;
+    margin: 17px 0 5px;
+    width: 627px;
+    min-width: 0;
+
+    @include xs {
+      margin: 0;
+      width: 100%;
+      min-width: unset;
+    }
+  }
+
+  .footerFlexRowTwo {
+    display: flex;
+    justify-content: space-between;
+    gap: 0 10px;
+    margin: 0 1px 0 0;
+
+    @include xxs {
+      flex-direction: column;
+      align-items: center;
+      gap: 30px 10px;
+    }
+  }
+
+  .subscribeTitle {
+    font: 300 26px/1.26 Outfit, Helvetica, Arial, serif;
+    color: rgb(255 255 255 / 60%);
+
+    @include md {
+      align-items: flex-start;
+      font-size: 24px;
+    }
+
+    @include xxs {
+      width: 100%;
+      font-size: 22px;
+    }
+  }
+
+  .subscribeButton {
+    margin: 12px 0 3px;
+    font: 600 14px/1.28 Outfit, Helvetica, Arial, serif;
+    color: rgb(255 255 255);
+
+    @include xxs {
+      margin: 0;
+      width: 100%;
+    }
+  }
+
+  .footerContentBox {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 0 4px;
+    background-color: rgb(254 203 193 / 39.2%);
+  }
+
+  .dividerLine {
+    margin: 0 0 0 auto;
+    width: 77px;
+    max-width: 85%;
+    height: 1px;
+    min-height: 1px;
+    background-color: rgb(255 255 255);
+  }
+
+  .flexRowFooterThree {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0 10px;
+
+    @include sm {
+      flex-direction: column;
+      gap: 30px 10px;
+    }
+  }
+
+  .footerImageTwo {
+    width: 185px;
+    min-width: 0;
+    object-fit: cover;
+
+    @include sm {
+      width: 100%;
+      min-width: unset;
+      max-width: 185px;
+    }
+  }
+
+  .footerFlexRowFour {
+    display: flex;
+    justify-content: space-between;
+    gap: 0 10px;
+    width: 627px;
+    min-width: 0;
+
+    @include sm {
+      width: 100%;
+      min-width: unset;
+    }
+
+    @include xs {
+      flex-direction: column;
+      align-items: center;
+      gap: 30px 10px;
+    }
+  }
+
+  .solutionsFooterTitle {
+    font: 600 26px/1.26 Outfit, Helvetica, Arial, serif;
+    color: rgb(255 255 255);
+
+    @include md {
+      align-items: flex-start;
+      font-size: 24px;
+    }
+
+    @include xs {
+      width: 100%;
+    }
+
+    @include xxs {
+      font-size: 22px;
+    }
+  }
+
+  .servicesFooterTitle {
+    font: 600 26px/1.26 Outfit, Helvetica, Arial, serif;
+    color: rgb(255 255 255);
+
+    @include md {
+      align-items: flex-start;
+      font-size: 24px;
+    }
+
+    @include xs {
+      width: 100%;
+    }
+
+    @include xxs {
+      font-size: 22px;
+    }
+  }
+
+  .clientsFooterTitle {
+    font: 600 26px/1.26 Outfit, Helvetica, Arial, serif;
+    color: rgb(255 255 255);
+
+    @include md {
+      align-items: flex-start;
+      font-size: 24px;
+    }
+
+    @include xs {
+      width: 100%;
+    }
+
+    @include xxs {
+      font-size: 22px;
+    }
+  }
+
+  .aboutFooterTitle {
+    font: 600 26px/1.26 Outfit, Helvetica, Arial, serif;
+    color: rgb(255 255 255);
+
+    @include md {
+      align-items: flex-start;
+      font-size: 24px;
+    }
+
+    @include xs {
+      width: 100%;
+    }
+
+    @include xxs {
+      font-size: 22px;
+    }
+  }
+
+  .resourcesFooterTitle {
+    font: 600 26px/1.26 Outfit, Helvetica, Arial, serif;
+    color: rgb(255 255 255);
+
+    @include md {
+      align-items: flex-start;
+      font-size: 24px;
+    }
+
+    @include xs {
+      width: 100%;
+    }
+
+    @include xxs {
+      font-size: 22px;
+    }
+  }
+
+  .footerContentBoxOne {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(237 109 82);
+  }
+
+  .flexRowFooterFive {
+    display: flex;
+    justify-content: space-between;
+    gap: 0 10px;
+    margin: 52px 0 94px 11.83%;
+    width: 543px;
+    max-width: 85%;
+
+    @include sm {
+      margin: 52px auto 94px;
+    }
+
+    @include xs {
+      flex-direction: column;
+      align-items: center;
+      gap: 30px 10px;
+      margin: 52px auto 80px;
+    }
+
+    @include tn {
+      margin: 50px auto;
+    }
+  }
+
+  .footerRightsText {
+    font: 600 12px/1.25 Outfit, Helvetica, Arial, serif;
+    color: rgb(255 255 255 / 69.8%);
+
+    @include xs {
+      width: 100%;
+    }
+  }
+
+  .footerPolicyText {
+    font: 600 12px/1.25 Outfit, Helvetica, Arial, serif;
+    color: rgb(255 255 255 / 69.8%);
+
+    @include xs {
+      width: 100%;
+    }
+  }
+}

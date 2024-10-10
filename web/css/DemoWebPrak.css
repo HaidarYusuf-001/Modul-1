@@ -1,0 +1,720 @@
+.demo-web-prak.contentSection {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  overflow: hidden;
+}
+
+.demo-web-prak .solutionsSection {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 117px;
+  min-height: 117px;
+  background-color: #c6dee0;
+}
+
+.demo-web-prak .flexRowContainer {
+  position: relative;
+  display: flex;
+  gap: 0 27px;
+  margin: 44px 670px;
+  width: 533px;
+}
+
+@media (min-width: 1920px) and (max-width: 2999px) {
+  .demo-web-prak .flexRowContainer {
+    margin: 44px auto 44px 41%;
+  }
+}
+
+.demo-web-prak .solutionsTitle {
+  width: 98px;
+  height: 29px;
+  font: 400 24px/1.2 Itim, Helvetica, Arial, serif;
+  color: #234d4b;
+}
+
+.demo-web-prak .servicesTitle {
+  width: 86px;
+  height: 29px;
+  font: 400 24px/1.2 Itim, Helvetica, Arial, serif;
+  color: #234d4b;
+}
+
+.demo-web-prak .clientsTitle {
+  width: 73px;
+  height: 29px;
+  font: 400 24px/1.2 Itim, Helvetica, Arial, serif;
+  color: #234d4b;
+}
+
+.demo-web-prak .aboutTitle {
+  width: 63px;
+  height: 29px;
+  font: 400 24px/1.2 Itim, Helvetica, Arial, serif;
+  color: #234d4b;
+}
+
+.demo-web-prak .resourcesTitle {
+  width: 105px;
+  height: 29px;
+  font: 400 24px/1.2 Itim, Helvetica, Arial, serif;
+  color: #234d4b;
+}
+
+.demo-web-prak .imageRowContainer {
+  position: absolute;
+  top: 26px;
+  left: 216px;
+  display: flex;
+  gap: 0 27px;
+  width: 1292px;
+  height: 61px;
+}
+
+.demo-web-prak .mainImage {
+  margin: 9px 0 0;
+  width: 51px;
+  min-width: 0;
+  object-fit: contain;
+}
+
+@media (min-width: 1920px) and (max-width: 2999px) {
+  .demo-web-prak .mainImage {
+    margin: 9px 0 0 265px;
+  }
+}
+
+.demo-web-prak .contentColumn {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 1px;
+  width: 190px;
+  min-width: 0;
+}
+
+.demo-web-prak .titleContainer {
+  display: flex;
+}
+
+.demo-web-prak .dreamTitle {
+  font: 600 36px/1.25 Outfit, Helvetica, Arial, serif;
+  color: #fa7d65;
+}
+
+.demo-web-prak .safeTitle {
+  font: 600 36px/1.25 Outfit, Helvetica, Arial, serif;
+  color: #335a5b;
+}
+
+.demo-web-prak .insuranceServicesText {
+  margin: 0 3px;
+  font: 600 12px/1.25 Outfit, Helvetica, Arial, serif;
+  color: #012527;
+  letter-spacing: 3.28px;
+}
+
+.demo-web-prak .additionalImage {
+  position: absolute;
+  top: 42px;
+  right: 210px;
+  width: 27px;
+}
+
+@media (min-width: 1920px) and (max-width: 2999px) {
+  .demo-web-prak .additionalImage {
+    right: 340px;
+  }
+}
+
+.demo-web-prak .heroSection {
+  display: flex;
+  flex-direction: column;
+}
+
+.demo-web-prak .flexRowContainerHero {
+  display: flex;
+  margin: 100px auto;
+  width: 100%;
+  max-width: 1262.015625px;
+}
+
+@media (min-width: 1920px) and (max-width: 2999px) {
+  .demo-web-prak .flexRowContainerHero {
+    width: 1262.02px;
+  }
+}
+
+.demo-web-prak .leftColumn {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 1262px;
+  height: 2551px;
+}
+
+@media (min-width: 1920px) and (max-width: 2999px) {
+  .demo-web-prak .leftColumn {
+    margin: 0;
+    width: 1262.02px;
+  }
+}
+
+.demo-web-prak .flexRowContainerInner {
+  display: flex;
+  justify-content: space-between;
+  gap: 0 10px;
+  margin: 0 0 0 0.5px;
+  width: 1261.5px;
+  height: 723px;
+}
+
+.demo-web-prak .imageColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 33px 0;
+  margin: 93px 0 171px;
+  width: 379.5px;
+  height: 459px;
+}
+
+.demo-web-prak .imageColumn1 {
+  display: flex;
+  flex-direction: column;
+  gap: 41px 0;
+  margin: 0 0 0 1.5px;
+  width: 378px;
+  height: 242px;
+}
+
+.demo-web-prak .heroImage {
+  margin: 0 295px 0 0;
+  width: 83px;
+  height: 85px;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.demo-web-prak .imageGroupContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 378px;
+  height: 116px;
+}
+
+.demo-web-prak .flexRowHeroTitle {
+  display: flex;
+  width: 378px;
+  height: 91px;
+}
+
+.demo-web-prak .heroMainTitle {
+  width: 227px;
+  height: 91px;
+  font: 600 72px/1.26 Outfit, Helvetica, Arial, serif;
+  color: #fa7d65;
+}
+
+.demo-web-prak .heroSubTitle {
+  width: 151px;
+  height: 91px;
+  font: 600 72px/1.26 Outfit, Helvetica, Arial, serif;
+  color: #335a5b;
+}
+
+.demo-web-prak .insuranceServicesSubtitle {
+  margin: 0 9px;
+  width: 360px;
+  height: 25px;
+  font: 600 20px/1.25 Outfit, Helvetica, Arial, serif;
+  color: #012527;
+  letter-spacing: 5.5px;
+}
+
+.demo-web-prak .insuranceIntroText {
+  margin: 0 0.5px 0 0;
+  width: 379px;
+  height: 184px;
+  font: 400 24px/1.25 Outfit, Helvetica, Arial, serif;
+  color: #012527;
+  letter-spacing: 1.68px;
+}
+
+.demo-web-prak .imageGroupWrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 625px;
+  height: 723px;
+}
+
+.demo-web-prak .flexRowServiceImages {
+  position: relative;
+  display: flex;
+  width: 625px;
+  height: 723px;
+}
+
+.demo-web-prak .serviceImageOne {
+  width: 625px;
+  height: 723px;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.demo-web-prak .serviceImageTwo {
+  position: absolute;
+  inset: -41px 95px 0 -212px;
+  width: 742px;
+  height: 764px;
+}
+
+.demo-web-prak .colorBlock {
+  position: absolute;
+  inset: -5px 0 723px;
+  width: 625px;
+  height: 5px;
+  background-color: #f2644b;
+}
+
+.demo-web-prak .contentBox {
+  display: flex;
+  flex-direction: column;
+  margin: 233px 0 0;
+  width: 1262px;
+  height: 695px;
+}
+
+.demo-web-prak .expectationsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 58px 0;
+  margin: 0 163px 0 26px;
+  width: 1073px;
+  height: 695px;
+}
+
+.demo-web-prak .expectationsTitle {
+  margin: 0 293px 0 461px;
+  width: 319px;
+  height: 90px;
+  font: 400 36px/1.25 Outfit, Helvetica, Arial, serif;
+  color: black;
+}
+
+.demo-web-prak .flexRowFeatures {
+  display: flex;
+  justify-content: space-between;
+  gap: 0 10px;
+  width: 1073px;
+  height: 547px;
+}
+
+.demo-web-prak .featuresSubtitle {
+  margin: 100px 0 422px;
+  width: 114px;
+  height: 25px;
+  font: 400 20px/1.25 Outfit, Helvetica, Arial, serif;
+  color: black;
+  letter-spacing: 1.4px;
+}
+
+.demo-web-prak .smallCommercialColumn {
+  display: flex;
+  flex-direction: column;
+  width: 227.5px;
+  height: 547px;
+}
+
+.demo-web-prak .smallCommercialImage {
+  margin: 0 17.5px 0 5px;
+  width: 205px;
+  height: 236px;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.demo-web-prak .smallCommercialTitle {
+  margin: 54px 0.5px 0 0;
+  width: 227px;
+  height: 70px;
+  font: 500 28px/1.25 Outfit, Helvetica, Arial, serif;
+  color: black;
+}
+
+.demo-web-prak .smallBusinessFeatureSubtitle {
+  margin: 33px 0 0 0.5px;
+  width: 227px;
+  height: 103px;
+  font: 400 20px/1.25 Outfit, Helvetica, Arial, serif;
+  color: black;
+}
+
+.demo-web-prak .specialtyInsuranceColumn {
+  display: flex;
+  flex-direction: column;
+  width: 241px;
+  height: 547px;
+}
+
+.demo-web-prak .specialtyInsuranceImage {
+  margin: 0 33px 0 3px;
+  width: 205px;
+  height: 236px;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.demo-web-prak .specialtyInsuranceTitle {
+  margin: 54px 0 0;
+  width: 241px;
+  height: 70px;
+  font: 500 28px/1.25 Outfit, Helvetica, Arial, serif;
+  color: black;
+}
+
+.demo-web-prak .specialtyInsuranceFeatureSubtitle {
+  margin: 22px 0 0;
+  width: 241px;
+  height: 127px;
+  font: 400 20px/1.25 Outfit, Helvetica, Arial, serif;
+  color: black;
+}
+
+.demo-web-prak .showMore {
+  margin: 18px 0 0;
+  width: 241px;
+  height: 20px;
+  font: 400 16px/1.25 Outfit, Helvetica, Arial, serif;
+  color: #fa7d65;
+  text-decoration: underline;
+}
+
+.demo-web-prak .clientsOverviewContainer {
+  display: flex;
+  justify-content: space-between;
+  gap: 0 10px;
+  margin: 232px 38px 0 23px;
+  width: 1201px;
+  height: 668px;
+}
+
+.demo-web-prak .clientColumnOne {
+  display: flex;
+  flex-direction: column;
+  margin: 282px 0 0;
+  width: 170px;
+  height: 386px;
+}
+
+.demo-web-prak .clientsHeroTitle {
+  margin: 0 26px 0 0;
+  width: 144px;
+  height: 120px;
+  font: 400 48px/1.25 Outfit, Helvetica, Arial, serif;
+  color: black;
+}
+
+.demo-web-prak .clientsColorContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 80px 0;
+  margin: 80px 0 0;
+  width: 170px;
+  height: 87px;
+}
+
+.demo-web-prak .clientColorBlockOne {
+  display: flex;
+  justify-content: space-between;
+  gap: 0 10px;
+  margin: 0 0 0 2px;
+  width: 168px;
+  height: 6px;
+}
+
+.demo-web-prak .colorBlockOne {
+  width: 6px;
+  height: 6px;
+  background-color: #d9d9d9;
+}
+
+.demo-web-prak .clientColorBlockTwo {
+  width: 6px;
+  height: 6px;
+  background-color: #df5132;
+}
+
+.demo-web-prak .colorBlockThree {
+  width: 6px;
+  height: 6px;
+  background-color: #d9d9d9;
+}
+
+.demo-web-prak .colorBlockFour {
+  width: 6px;
+  height: 6px;
+  background-color: #d9d9d9;
+}
+
+.demo-web-prak .clientsDivider {
+  margin: 0 3px 0 0;
+  width: 167px;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.278);
+}
+
+.demo-web-prak .clientsActionContainer {
+  display: flex;
+  justify-content: space-between;
+  gap: 0 10px;
+  margin: 79px 42px 0 2px;
+  width: 126px;
+  height: 20px;
+}
+
+.demo-web-prak .viewAllClientsLink {
+  width: 11px;
+  height: 20px;
+  font: 400 16px/1.25 Gelasio, Helvetica, Arial, serif;
+  color: #fa7d65;
+}
+
+.demo-web-prak .viewAllClientsBtn {
+  width: 72px;
+  height: 20px;
+  font: 400 16px/1.25 Outfit, Helvetica, Arial, serif;
+  color: #fa7d65;
+}
+
+.demo-web-prak .clientColumnTwo {
+  display: flex;
+  flex-direction: column;
+  margin: 1px 0;
+  width: 333px;
+  height: 666px;
+}
+
+.demo-web-prak .nordRiskImage {
+  width: 333px;
+  height: 389px;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.demo-web-prak .nordRiskTitle {
+  margin: 64px 40px 0 0;
+  width: 293px;
+  height: 70px;
+  font: 500 28px/1.25 Outfit, Helvetica, Arial, serif;
+  color: black;
+}
+
+.demo-web-prak .nordRiskSubtitle {
+  margin: 24px 56px 0 0;
+  width: 277px;
+  height: 75px;
+  font: 400 20px/1.25 Outfit, Helvetica, Arial, serif;
+  color: black;
+}
+
+.demo-web-prak .clientColumnThree {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 1px;
+  width: 333px;
+  height: 667px;
+}
+
+.demo-web-prak .euroShieldImage {
+  width: 333px;
+  height: 390px;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.demo-web-prak .euroShieldTitle {
+  margin: 64px 165px 0 0;
+  width: 168px;
+  height: 70px;
+  font: 500 28px/1.25 Outfit, Helvetica, Arial, serif;
+  color: black;
+}
+
+.demo-web-prak .euroShieldSubtitle {
+  margin: 24px 56px 0 0;
+  width: 277px;
+  height: 75px;
+  font: 400 20px/1.25 Outfit, Helvetica, Arial, serif;
+  color: black;
+}
+
+.demo-web-prak .footerSection {
+  display: flex;
+  flex-direction: column;
+}
+
+.demo-web-prak .footerInnerContainer {
+  display: flex;
+  flex-direction: column;
+  margin: 35px auto 26px;
+  width: 98.06%;
+  max-width: 1412px;
+  background-color: #fa7c63;
+}
+
+@media (min-width: 1920px) and (max-width: 2999px) {
+  .demo-web-prak .footerInnerContainer {
+    width: 100%;
+  }
+}
+
+.demo-web-prak .flexColFooter {
+  display: flex;
+  flex-direction: column;
+  gap: 37px 0;
+  margin: 107px 0 0;
+}
+
+.demo-web-prak .flexColFooterOne {
+  display: flex;
+  flex-direction: column;
+  gap: 35px 0;
+  margin: 0 0 0 11.05%;
+  width: 994.046875px;
+  max-width: 85%;
+}
+
+.demo-web-prak .flexRowFooterSection {
+  display: flex;
+  justify-content: space-between;
+  gap: 0 10px;
+  margin: 0 0 0 5px;
+}
+
+.demo-web-prak .footerImage {
+  width: 68px;
+  min-width: 0;
+  border-radius: 5px;
+  outline: 3px solid white;
+  outline-offset: -3px;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.demo-web-prak .footerFlexColTwo {
+  display: flex;
+  flex-direction: column;
+  gap: 13px 0;
+  margin: 17px 0 5px;
+  width: 627px;
+  min-width: 0;
+}
+
+.demo-web-prak .footerFlexRowTwo {
+  display: flex;
+  justify-content: space-between;
+  gap: 0 10px;
+  margin: 0 1px 0 0;
+}
+
+.demo-web-prak .subscribeTitle {
+  font: 300 26px/1.26 Outfit, Helvetica, Arial, serif;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.demo-web-prak .subscribeButton {
+  margin: 12px 0 3px;
+  font: 600 14px/1.28 Outfit, Helvetica, Arial, serif;
+  color: white;
+}
+
+.demo-web-prak .footerContentBox {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 0 4px;
+  background-color: rgba(254, 203, 193, 0.392);
+}
+
+.demo-web-prak .dividerLine {
+  margin: 0 0 0 auto;
+  width: 77px;
+  max-width: 85%;
+  height: 1px;
+  min-height: 1px;
+  background-color: white;
+}
+
+.demo-web-prak .flexRowFooterThree {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0 10px;
+}
+
+.demo-web-prak .footerImageTwo {
+  width: 185px;
+  min-width: 0;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.demo-web-prak .footerFlexRowFour {
+  display: flex;
+  justify-content: space-between;
+  gap: 0 10px;
+  width: 627px;
+  min-width: 0;
+}
+
+.demo-web-prak .solutionsFooterTitle {
+  font: 600 26px/1.26 Outfit, Helvetica, Arial, serif;
+  color: white;
+}
+
+.demo-web-prak .servicesFooterTitle {
+  font: 600 26px/1.26 Outfit, Helvetica, Arial, serif;
+  color: white;
+}
+
+.demo-web-prak .clientsFooterTitle {
+  font: 600 26px/1.26 Outfit, Helvetica, Arial, serif;
+  color: white;
+}
+
+.demo-web-prak .aboutFooterTitle {
+  font: 600 26px/1.26 Outfit, Helvetica, Arial, serif;
+  color: white;
+}
+
+.demo-web-prak .resourcesFooterTitle {
+  font: 600 26px/1.26 Outfit, Helvetica, Arial, serif;
+  color: white;
+}
+
+.demo-web-prak .footerContentBoxOne {
+  display: flex;
+  flex-direction: column;
+  background-color: #ed6d52;
+}
+
+.demo-web-prak .flexRowFooterFive {
+  display: flex;
+  justify-content: space-between;
+  gap: 0 10px;
+  margin: 52px 0 94px 11.83%;
+  width: 543px;
+  max-width: 85%;
+}
+
+.demo-web-prak .footerRightsText {
+  font: 600 12px/1.25 Outfit, Helvetica, Arial, serif;
+  color: rgba(255, 255, 255, 0.698);
+}
+
+.demo-web-prak .footerPolicyText {
+  font: 600 12px/1.25 Outfit, Helvetica, Arial, serif;
+  color: rgba(255, 255, 255, 0.698);
+}
