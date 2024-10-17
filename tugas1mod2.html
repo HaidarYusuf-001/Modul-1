@@ -15,27 +15,28 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background-image: url("negativeearth.jpg");
+        background-image: url("stars.jpg");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
       }
       .calculator {
-        background-color: rgba(255, 255, 255, 0.2);
+        background-color: rgba(0, 0, 0, 0.4);
         border-radius: 10px;
         padding: 20px;
-        box-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
         max-width: 300px;
         width: 100%;
       }
       .display {
-        background-color: rgba(0, 0, 0, 0.7);
+        background-color: rgba(255, 255, 255, 0.1);
         color: #fff;
         font-size: 24px;
         text-align: right;
         padding: 10px;
         margin-bottom: 10px;
         border-radius: 5px;
+        word-wrap: break-word;
       }
       .buttons {
         display: grid;
@@ -43,7 +44,7 @@
         gap: 10px;
       }
       button {
-        background-color: rgba(255, 255, 255, 0.25);
+        background-color: rgba(255, 255, 255, 0.1);
         border: none;
         color: #fff;
         font-size: 18px;
@@ -53,16 +54,16 @@
         transition: background-color 0.3s;
       }
       button:hover {
-        background-color: rgba(255, 255, 255, 0.1);
+        background-color: rgba(255, 255, 255, 0.2);
       }
       .operator {
-        background-color: rgba(255, 165, 0, 0.5);
+        background-color: rgba(255, 165, 0, 0.6);
       }
       .clear {
-        background-color: rgba(255, 0, 0, 0.5);
+        background-color: rgba(255, 0, 0, 0.6);
       }
       .equals {
-        background-color: rgba(0, 255, 0, 0.5);
+        background-color: rgba(0, 255, 0, 0.6);
       }
       @media (max-width: 480px) {
         .calculator {
@@ -76,8 +77,8 @@
       <div class="display" id="display">0</div>
       <div class="buttons">
         <button class="clear" onclick="clearAll()">C</button>
-        <button onclick="appendToDisplay('(')">(</button>
-        <button onclick="appendToDisplay(')')">)</button>
+        <button class="operator" onclick="smartParentheses()">()</button>
+        <button class="operator" onclick="appendToDisplay('**')">^</button>
         <button class="operator" onclick="appendToDisplay('/')">/</button>
         <button onclick="appendToDisplay('7')">7</button>
         <button onclick="appendToDisplay('8')">8</button>
@@ -93,7 +94,6 @@
         <button class="operator" onclick="appendToDisplay('+')">+</button>
         <button onclick="appendToDisplay('0')">0</button>
         <button onclick="appendToDisplay('.')">.</button>
-        <button class="operator" onclick="appendToDisplay('**')">^</button>
         <button class="operator" onclick="appendToDisplay('%')">%</button>
         <button class="equals" onclick="calculate()">=</button>
       </div>
@@ -116,9 +116,35 @@
 
       function calculate() {
         try {
-          display.innerText = eval(display.innerText);
+          let result = eval(display.innerText);
+          display.innerText = Number.isInteger(result)
+            ? result
+            : result.toFixed(2);
         } catch (error) {
           display.innerText = "Error";
+        }
+      }
+
+      function smartParentheses() {
+        let expr = display.innerText;
+        if (expr === "0") expr = "";
+
+        let openCount = (expr.match(/\(/g) || []).length;
+        let closeCount = (expr.match(/\)/g) || []).length;
+
+        let lastChar = expr.slice(-1);
+
+        if (
+          expr === "" ||
+          /[\+\-\*\/\(\^%]/.test(lastChar) ||
+          openCount === closeCount
+        ) {
+          display.innerText = expr + "(";
+        } else if (
+          openCount > closeCount &&
+          (/[0-9\)]/.test(lastChar) || lastChar === ")")
+        ) {
+          display.innerText = expr + ")";
         }
       }
     </script>
