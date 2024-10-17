@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive To Do List App</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        min-height: 100vh;
+        background-image: url("dark.jpg");
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .container {
+        background-color: rgba(255, 255, 255, 0.35);
+        border-radius: 8px;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 90%;
+        max-width: 500px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      h1 {
+        text-align: center;
+        color: #000;
+        transition: color 0.3s ease;
+      }
+      h1:hover {
+        color: #333;
+      }
+      #todo-form {
+        display: flex;
+        margin-bottom: 20px;
+      }
+      #todo-input {
+        flex-grow: 1;
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #ddd;
+        border-radius: 4px 0 0 4px;
+        transition: box-shadow 0.3s ease;
+      }
+      #todo-input:focus {
+        outline: none;
+        box-shadow: 0 0 5px rgba(51, 51, 51, 0.5);
+      }
+      #add-btn {
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color: #333;
+        color: white;
+        border: none;
+        border-radius: 0 4px 4px 0;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.1s ease;
+      }
+      #add-btn:hover {
+        background-color: #555;
+      }
+      #add-btn:active {
+        transform: scale(0.95);
+      }
+      #todo-list {
+        list-style-type: none;
+        padding: 0;
+      }
+      .todo-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #f9f9f9;
+        margin-bottom: 10px;
+        padding: 10px;
+        border-radius: 4px;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+        animation: fadeIn 0.5s ease;
+      }
+      .todo-item:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+      .todo-item span {
+        flex-grow: 1;
+        margin-right: 10px;
+      }
+      .todo-item button {
+        padding: 5px 10px;
+        margin-left: 5px;
+        font-size: 14px;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.1s ease;
+      }
+      .todo-item button:hover {
+        transform: scale(1.05);
+      }
+      .todo-item button:active {
+        transform: scale(0.95);
+      }
+      .edit-btn {
+        background-color: #777;
+        color: white;
+        border: none;
+        border-radius: 4px;
+      }
+      .edit-btn:hover {
+        background-color: #999;
+      }
+      .delete-btn {
+        background-color: #f44336;
+        color: white;
+        border: none;
+        border-radius: 4px;
+      }
+      .delete-btn:hover {
+        background-color: #ff5c5c;
+      }
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(10px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      .fade-out {
+        animation: fadeOut 0.5s ease;
+      }
+      @keyframes fadeOut {
+        from {
+          opacity: 1;
+          transform: translateY(0);
+        }
+        to {
+          opacity: 0;
+          transform: translateY(-10px);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>To Do List</h1>
+      <form id="todo-form">
+        <input
+          type="text"
+          id="todo-input"
+          placeholder="Add a new task..."
+          required
+        />
+        <button type="submit" id="add-btn">Add</button>
+      </form>
+      <ul id="todo-list"></ul>
+    </div>
+
+    <script>
+      const todoForm = document.getElementById("todo-form");
+      const todoInput = document.getElementById("todo-input");
+      const todoList = document.getElementById("todo-list");
+      let todos = JSON.parse(localStorage.getItem("todos")) || [];
+
+      function saveTodos() {
+        localStorage.setItem("todos", JSON.stringify(todos));
+      }
+
+      function renderTodos() {
+        todoList.innerHTML = "";
+        todos.forEach((todo, index) => {
+          const li = document.createElement("li");
+          li.className = "todo-item";
+          li.innerHTML = `
+                    <span>${todo}</span>
+                    <div>
+                        <button class="edit-btn" onclick="editTodo(${index})">Edit</button>
+                        <button class="delete-btn" onclick="deleteTodo(${index})">Delete</button>
+                    </div>
+                `;
+          todoList.appendChild(li);
+        });
+      }
+
+      function addTodo(e) {
+        e.preventDefault();
+        const todoText = todoInput.value.trim();
+        if (todoText) {
+          todos.push(todoText);
+          saveTodos();
+          renderTodos();
+          todoInput.value = "";
+        }
+      }
+
+      function editTodo(index) {
+        const newTodo = prompt("Edit task:", todos[index]);
+        if (newTodo !== null) {
+          todos[index] = newTodo.trim();
+          saveTodos();
+          renderTodos();
+        }
+      }
+
+      function deleteTodo(index) {
+        if (confirm("Are you sure you want to delete this task?")) {
+          const item = todoList.children[index];
+          item.classList.add("fade-out");
+          item.addEventListener("animationend", () => {
+            todos.splice(index, 1);
+            saveTodos();
+            renderTodos();
+          });
+        }
+      }
+
+      todoForm.addEventListener("submit", addTodo);
+      renderTodos();
+    </script>
+  </body>
+</html>
